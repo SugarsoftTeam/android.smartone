@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<!-- 식단 인증샷 -->
+    <ImageButton
+        android:id="@+id/BtnDiet"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="35dp"
+        android:contentDescription="@string/main_button_1_desc"
+        android:src="@android:drawable/btn_star_big_on" />
+
+    <!-- 행사 앨범 -->
+    <ImageButton
+        android:id="@+id/BtnFestivalAlbum"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="94dp"
+        android:layout_marginTop="35dp"
+        android:contentDescription="@string/main_button_2_desc"        
+        android:src="@android:drawable/ic_menu_camera" />
+
+    <!-- 입학 상담 -->
+    <ImageButton
+        android:id="@+id/BtnEntrance"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="164dp"
+        android:layout_marginTop="35dp"        
+        android:contentDescription="@string/main_button_3_desc"
+        android:src="@android:drawable/ic_input_get" />
+
+    
+    
+    
+    
+    <!--  두번째 줄..  -->
+    
+    <!-- 원 소식 -->
+    <ImageButton
+        android:id="@+id/BtnNews"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="115dp"        
+        android:contentDescription="@string/main_button_4_desc"
+        android:src="@android:drawable/ic_input_get" />
+    
+    <!-- 자유게시판 -->
+    <ImageButton
+        android:id="@+id/BtnFreeboard"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="94dp"
+        android:layout_marginTop="115dp"
+        android:contentDescription="@string/main_button_5_desc"        
+        android:src="@android:drawable/ic_menu_camera" />
+    
+    <!-- 퇴소/퇴원 신청 -->
+    <ImageButton
+        android:id="@+id/BtnLeaving"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="164dp"
+        android:layout_marginTop="115dp"
+        android:contentDescription="@string/main_button_6_desc"        
+        android:src="@android:drawable/ic_menu_camera" />
+
+    	
+    <!--  세번째 줄..  -->
+    
+    <!-- 스마트원 공지 -->
+    <ImageButton
+        android:id="@+id/BtnNoti"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="195dp"        
+        android:contentDescription="@string/main_button_7_desc"
+        android:src="@android:drawable/ic_input_get" />
+
+    <!-- 제안하기 -->
+    <ImageButton
+        android:id="@+id/BtnOffer"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="94dp"
+        android:layout_marginTop="195dp"        
+        android:contentDescription="@string/main_button_8_desc"
+        android:src="@android:drawable/ic_input_get" />
+        
+
+</RelativeLayout>
+    
+    

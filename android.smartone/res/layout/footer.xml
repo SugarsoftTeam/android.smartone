@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="5" >
+
+    <Button
+        android:id="@+id/footer_btn1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="홈" />
+
+    <Button
+        android:id="@+id/footer_btn2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="글쓰기" />
+
+    <Button
+        android:id="@+id/footer_btn3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="교육기관"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/footer_btn4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="검색" />
+
+    <Button
+        android:id="@+id/footer_btn5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TOP" />
+
+</LinearLayout>
