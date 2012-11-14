@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.ViewFlipper;
@@ -55,6 +56,8 @@ public class MainActivity extends Activity {
         //startActivity(new Intent(this, noticeActivity.class)); 
         
         // �����蹂댁�二쇨린
+        
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
      	startActivity(new Intent(this, titleActivity.class));
      	
         // 占�占쏙옙??????? 癒쇽옙? 蹂댐옙?二쇨린
