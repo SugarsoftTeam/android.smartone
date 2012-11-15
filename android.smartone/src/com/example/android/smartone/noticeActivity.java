@@ -6,6 +6,7 @@ import com.example.android.smartone.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 
 public class noticeActivity extends Activity {
@@ -16,8 +17,8 @@ public class noticeActivity extends Activity {
     	
         super.onCreate(savedInstanceState);
         
-        // Çì´õ¿¡ º¸¿©ÁÙ ³»¿ë Á¤ÀÇ
-        //requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
+        
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_notice);
         //getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.header);  
         
@@ -36,7 +37,7 @@ public class noticeActivity extends Activity {
 			
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				System.out.println("¿À´Ã ÇÑ¹ø¸¸ º¸¿©Áö°Ô Ã³¸®ÇØ¾ßÇÔ");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ï¿½Ø¾ï¿½ï¿½ï¿½");
 			}
 		});
         

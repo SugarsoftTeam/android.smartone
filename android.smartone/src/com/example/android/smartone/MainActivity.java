@@ -10,7 +10,12 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.animation.AnimationUtils;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.Spinner;
+import android.widget.SpinnerAdapter;
 import android.widget.ViewFlipper;
 
 import com.example.android.smartone.titleActivity;
@@ -35,16 +40,19 @@ import com.example.android.smartone.customer.subject_list;
 import com.example.android.smartone.each.mantoman_list;
 import com.example.android.smartone.each.receiveMsg_list;
 import com.example.android.smartone.inc.Footer;
+
 import com.example.android.smartone.info.freetalk_list;
 import com.example.android.smartone.job.job_man_list;
 import com.example.android.smartone.job.recruit_man_list;
 import com.example.android.smartone.notice.noti_list;
 import com.example.android.smartone.notice.offer_list;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity  {
 	
 	private ViewFlipper m_viewFlipper;
+	private Spinner m_Spinner;
 	private int m_nPreTouchPosX = 0;
+	private int startView = 0;
 	Footer footer;
 	
     @Override
@@ -57,14 +65,10 @@ public class MainActivity extends Activity {
         
         // �����蹂댁�二쇨린
         
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        
      	startActivity(new Intent(this, titleActivity.class));
      	
-        // 占�占쏙옙??????? 癒쇽옙? 蹂댐옙?二쇨린
-		//Intent intenttitle = new Intent( MainActivity.this, loginActivity.class );
-		//startActivity(intenttitle);
-		
-        //requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
+     	requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
         //getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.header);
         
@@ -73,9 +77,20 @@ public class MainActivity extends Activity {
         footer = (Footer) findViewById(R.id.layoutFooter);
         footer.setActivity(this);
     		    
-        
+        // 뷰플리퍼 
         m_viewFlipper = (ViewFlipper)findViewById(R.id.viewFlipper);
         m_viewFlipper.setOnTouchListener(MyTouchListener);	    
+        startView = m_viewFlipper.getCurrentView().getId();
+        
+        // 스피너 ( 하단 )
+        m_Spinner = (Spinner)findViewById(R.id.spinner1);
+        String[] myKinder = {"걸음마유치원","달나라유치원","공룡어린이집"};
+        m_Spinner.setPrompt("유치원선택");
+        ArrayAdapter<String> list;
+        list = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, myKinder);
+        m_Spinner.setAdapter(list);
+        m_Spinner.setOnItemSelectedListener((OnItemSelectedListener) this);
+        
 	           
         ImageButton btnMsg = (ImageButton)findViewById(R.id.BtnMsg);
         btnMsg.setOnClickListener( new View.OnClickListener() {
@@ -340,6 +355,7 @@ public class MainActivity extends Activity {
     	m_viewFlipper.setInAnimation(AnimationUtils.loadAnimation(this, R.anim.apear_from_right));
     	m_viewFlipper.setOutAnimation(AnimationUtils.loadAnimation(this, R.anim.disappear_to_left));
     	m_viewFlipper.showNext();
+    	changeView();
     }
      
     private void MovewPreviousView()
@@ -348,7 +364,47 @@ public class MainActivity extends Activity {
     	m_viewFlipper.setInAnimation(AnimationUtils.loadAnimation(this, R.anim.apear_from_left));
     	m_viewFlipper.setOutAnimation(AnimationUtils.loadAnimation(this, R.anim.disappear_to_right));
     	m_viewFlipper.showPrevious();
+    	changeView();
     }
+    
+    
+    private void changeView(){
+    	
+    	ImageView page_icon_1 = (ImageView)findViewById(R.id.imageView1);
+    	ImageView page_icon_2 = (ImageView)findViewById(R.id.imageView2);
+    	ImageView page_icon_3 = (ImageView)findViewById(R.id.imageView3);
+    	 	
+    	ImageView tab_title = (ImageView)findViewById(R.id.tab_title);    	
+    	    
+    	
+    	if ( m_viewFlipper.getCurrentView().getId() == startView ) {
+    		
+    		page_icon_1.setBackgroundResource(R.drawable.main_1_on);
+    		page_icon_2.setBackgroundResource(R.drawable.main_1_off);
+    		page_icon_3.setBackgroundResource(R.drawable.main_1_off);
+    		
+    		tab_title.setBackgroundResource(R.drawable.h2_1);
+    	
+    	} else if ( m_viewFlipper.getCurrentView().getId() == startView+1 ) {
+    		
+    		page_icon_1.setBackgroundResource(R.drawable.main_1_off);
+    		page_icon_2.setBackgroundResource(R.drawable.main_1_on);
+    		page_icon_3.setBackgroundResource(R.drawable.main_1_off);
+    		
+    		tab_title.setBackgroundResource(R.drawable.h2_1);
+    	
+    	} else if ( m_viewFlipper.getCurrentView().getId() == startView+2 ) {
+    		
+    		page_icon_1.setBackgroundResource(R.drawable.main_1_off);
+    		page_icon_2.setBackgroundResource(R.drawable.main_1_off);
+    		page_icon_3.setBackgroundResource(R.drawable.main_1_on);
+    		
+    		tab_title.setBackgroundResource(R.drawable.h2_1);
+    	
+    	}  	
+    	Log.d("flipper : ", ""+m_viewFlipper.getCurrentView().getId() );
+    	
+    }    
 
     View.OnTouchListener MyTouchListener = new View.OnTouchListener()
     {

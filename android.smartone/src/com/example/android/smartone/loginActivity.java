@@ -21,11 +21,8 @@ public class loginActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
-        // 스플래쉬로 타이틀을 잠깐 보여줌
-        //startActivity(new Intent(this, titleActivity.class));
         
-        // 헤더에 보여줄 내용 정의
-        //requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_login);
         //getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.header); 
         Button login_button_1 = (Button)findViewById(R.id.login_button1);
