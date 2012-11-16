@@ -29,7 +29,7 @@ public class diet_photo extends Activity implements OnClickListener  {
         Button button_view = new Button(this);
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
-        	button_view.setText(bundle.getString("NAME") + "이 " + bundle.getString("TIME") +"에 말합니다." + bundle.getString("DESC")
+        	button_view.setText(bundle.getString("NAME") + "sdf" + bundle.getString("TIME") +"--------" + bundle.getString("DESC")
                     + " --- Go Back ");
         } else {
         	button_view.setText("Go Back");
@@ -51,11 +51,9 @@ public class diet_photo extends Activity implements OnClickListener  {
         requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
         setContentView(relativeLayout, params);
         
-        //서브해더 삽입
         getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.sub_header);
-        
         TextView tvText = (TextView)findViewById(R.id.sub_header_text);
-        tvText.setText("식단 인증샷");
+        tvText.setText("diet_photo");
         
         
     }

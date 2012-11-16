@@ -6,7 +6,7 @@
 	    android:layout_height="60dip"
 	    android:gravity="center_vertical"
 	    android:paddingLeft="5dip"
-	    android:background="#323331">
+	    android:background="@drawable/bg_s_header">
 	 
 	    <ImageView
 	        android:id="@+id/header"

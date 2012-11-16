@@ -8,33 +8,36 @@
     
     <!-- 채용정보 -->
     <ImageButton
-        android:id="@+id/BtnRecruit"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:id="@+id/BtnSubject"
+        android:layout_width="65dp"
+        android:layout_height="76dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="35dp"
         android:contentDescription="@string/main_button_1_desc"
-        android:src="@android:drawable/btn_star_big_on" />
+        android:scaleType="fitXY"
+        android:background="@drawable/menu3_1" />
 
     <!-- 인재정보 -->
     <ImageButton
-        android:id="@+id/BtnJob"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:id="@+id/BtnHappycall"
+        android:layout_width="65dp"
+        android:layout_height="76dp"
         android:layout_marginLeft="94dp"
         android:layout_marginTop="35dp"
         android:contentDescription="@string/main_button_2_desc"        
-        android:src="@android:drawable/ic_menu_camera" />
+        android:scaleType="fitXY"
+        android:background="@drawable/menu3_2" />
 
     <!-- 걸음마넷 공지 -->
     <ImageButton
         android:id="@+id/BtnGulumma"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="65dp"
+        android:layout_height="76dp"
         android:layout_marginLeft="164dp"
         android:layout_marginTop="35dp"        
         android:contentDescription="@string/main_button_3_desc"
-        android:src="@android:drawable/ic_input_get" />
+        android:scaleType="fitXY"
+        android:background="@drawable/menu3_3" />
 
     
     
@@ -45,58 +48,73 @@
     <!-- 1대1 문의 -->
     <ImageButton
         android:id="@+id/BtnGulummaMantoman"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="65dp"
+        android:layout_height="76dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="115dp"        
         android:contentDescription="@string/main_button_4_desc"
-        android:src="@android:drawable/ic_input_get" />
+        android:scaleType="fitXY"
+        android:background="@drawable/menu3_4" />
     
     <!-- 계정과목문의 -->
     <ImageButton
-        android:id="@+id/BtnSubject"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:id="@+id/BtnDeposit"
+        android:layout_width="65dp"
+        android:layout_height="76dp"
         android:layout_marginLeft="94dp"
         android:layout_marginTop="115dp"
         android:contentDescription="@string/main_button_5_desc"        
-        android:src="@android:drawable/ic_menu_camera" />
+        android:scaleType="fitXY"
+        android:background="@drawable/menu3_5" />
     
     <!-- 입금확인 -->
     <ImageButton
-        android:id="@+id/BtnDeposit"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:id="@+id/BtnNoti"
+        android:layout_width="65dp"
+        android:layout_height="76dp"
         android:layout_marginLeft="164dp"
         android:layout_marginTop="115dp"
         android:contentDescription="@string/main_button_6_desc"        
-        android:src="@android:drawable/ic_menu_camera" />
+        android:scaleType="fitXY"
+        android:background="@drawable/menu3_6" />
 
     	
     <!--  세번째 줄..  -->
     
     <!-- 해피콜 신청 -->
     <ImageButton
-        android:id="@+id/BtnHappycall"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:id="@+id/BtnJob"
+        android:layout_width="65dp"
+        android:layout_height="76dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="195dp"        
         android:contentDescription="@string/main_button_7_desc"
-        android:src="@android:drawable/ic_input_get" />
+        android:scaleType="fitXY"
+        android:background="@drawable/menu3_7" />
+
+    <!-- 커뮤니티 -->
+    <ImageButton
+        android:id="@+id/BtnRecruit"
+        android:layout_width="65dp"
+        android:layout_height="76dp"
+        android:layout_marginLeft="94dp"
+        android:layout_marginTop="195dp"        
+        android:contentDescription="@string/main_button_8_desc"
+        android:scaleType="fitXY"
+        android:background="@drawable/menu3_8" />
 
     <!-- 커뮤니티 -->
     <ImageButton
         android:id="@+id/BtnFreetalk"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="94dp"
+        android:layout_width="65dp"
+        android:layout_height="76dp"
+        android:layout_marginLeft="164dp"
         android:layout_marginTop="195dp"        
         android:contentDescription="@string/main_button_8_desc"
-        android:src="@android:drawable/ic_input_get" />
-
+        android:scaleType="fitXY"
+        android:background="@drawable/menu3_9" />  
         
-
+ 
 </RelativeLayout>
     
     

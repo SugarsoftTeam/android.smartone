@@ -7,13 +7,13 @@
     android:background="#ffffff">
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/bg_body"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="30dp"
-        android:layout_marginRight="-40dp"
+        android:layout_marginRight="0dp"
         android:background="@drawable/bg_body1"
         android:baselineAlignBottom="true"
         android:cropToPadding="true"
@@ -33,11 +33,11 @@
 		    
 			<ImageView
 			    android:id="@+id/header"
-			    android:layout_width="160dp"
+			    android:layout_width="180dp"
 			    android:layout_height="wrap_content"
 			    android:contentDescription="@string/header_logo_desc"
 			    android:paddingTop="20dp"
-			    android:paddingLeft="30dp"
+			    android:paddingLeft="20dp"
 			    android:scaleType="fitStart"
 			    android:src="@drawable/h1_logo" />
 
@@ -46,9 +46,9 @@
 			    android:layout_width="81dp"
 			    android:layout_height="16dp"
 			    android:background="@drawable/h2_1"
-		        android:layout_marginLeft="60dp"
+		        android:layout_marginRight="20dp"
 		        android:layout_marginTop="40dp"
-		        android:layout_toRightOf="@+id/header"			    
+		        android:layout_alignParentRight="true"		    
 			    android:baselineAlignBottom="false" />	
 		 
 		</RelativeLayout>      
@@ -82,19 +82,23 @@
 					    
 		</ViewFlipper>
 		
+  		
+  		
+  		
+		
 		
 		<RelativeLayout
 		    android:id="@+id/RelativeLayout02"
 		    android:layout_width="fill_parent"
 		    android:layout_height="30dp"
 		    android:layout_alignParentBottom="true"
-		    android:layout_marginBottom="150dp" >
+		    android:layout_alignParentLeft="false"
+		    android:layout_marginBottom="140dp" >
 
 		    <ImageView
 		        android:id="@+id/imageView1"
 		        android:layout_width="14dp"
 		        android:layout_height="14dp"
-		        android:layout_alignParentLeft="true"
 		        android:layout_centerVertical="true"
 		        android:layout_marginLeft="140dp"
 		        android:background="@drawable/main_1_on" />
@@ -118,29 +122,103 @@
 		        android:background="@drawable/main_1_off" />
 
 		</RelativeLayout>
+
+
 		
-		<LinearLayout
+				
+		<RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/main_foot_info"
-        android:layout_width="wrap_content"
-	    android:layout_height="50dp"
+        android:layout_width="fill_parent"
+	    android:layout_height="66dp"
 	    android:layout_alignParentBottom="true"
-	    android:layout_marginBottom="65dp"         
+	    android:layout_marginBottom="62dp"    
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
         >
 		    
+		    <ImageView
+		        android:id="@+id/noti_round_left"
+		        android:layout_width="14dp"
+		        android:layout_height="66dp"
+		        android:background="@drawable/bg_round_left" />
+
 		    <include
 			    android:id="@+id/infobox"
 			    android:layout_width="wrap_content"
-			    android:layout_height="wrap_content"
-			    layout="@layout/main_infobox" />
+			    android:layout_height="fill_parent"
+			    layout="@layout/main_infobox" 
+			    />
+		    
+		    <ImageView
+		        android:id="@+id/noti_round_right"
+		        android:layout_width="14dp"
+		        android:layout_height="66dp"
+		        android:layout_alignParentRight="true"
+		        android:background="@drawable/bg_round_right" />			    
 		    
 		    
-		</LinearLayout>
+		</RelativeLayout>
 		
 		
-  	  	<com.example.android.smartone.inc.Footer
+		
+		<RelativeLayout
+		    xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:id="@+id/main_more_box"
+		    android:layout_width="87dp"
+		    android:layout_height="97dp" 
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginBottom="55dp"
+	        android:layout_marginRight="10dp"
+	        android:padding="10dp"		    
+		    android:background="@drawable/txt_more"
+		    android:visibility="invisible"
+		    >
+	    
+		    <Button
+		        android:id="@+id/main_more_box_1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="22dp"
+		        android:layout_gravity="center"
+		        android:layout_marginTop="0dp"
+		        android:background="@drawable/foot_5"
+		    />
+		    
+		    <Button
+		        android:id="@+id/main_more_box_2"
+		        android:layout_width="fill_parent"
+		        android:layout_height="22dp"
+		        android:layout_gravity="center"
+		        android:layout_marginTop="22dp"
+		        android:background="@drawable/foot_6"
+		    />
+		    
+		    <Button
+		        android:id="@+id/main_more_box_3"
+		        android:layout_width="fill_parent"
+		        android:layout_height="22dp"
+		        android:layout_gravity="center"
+		        android:layout_marginTop="44dp"
+		        android:background="@drawable/foot_7"
+		    />
+		    		    
+		    		    
+		    
+		</RelativeLayout> 			
+				
+		<include
+			    android:id="@+id/infobox"
+			    android:layout_width="fill_parent"
+			    android:layout_height="60dp"
+			    layout="@layout/footer" 
+	            android:layout_alignParentBottom="true"			    
+			    />
+		
+		
+		<!-- <com.example.android.smartone.inc.Footer
         android:id="@+id/layoutFooter" android:layout_width="fill_parent"
-        android:layout_height="60dp" android:layout_alignParentBottom="true" />
-		
+        android:layout_height="60dp" android:layout_alignParentBottom="true" />   -->
+  	  	
 
 </RelativeLayout>

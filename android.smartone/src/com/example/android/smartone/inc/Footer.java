@@ -40,37 +40,62 @@ public class Footer extends LinearLayout {
         footerBtn.setOnClickListener(mFooterListener);
         footerBtn2 = (Button) findViewById(R.id.footer_btn2);
         footerBtn2.setOnClickListener(mFooterListener);
+        footerBtn3 = (Button) findViewById(R.id.footer_btn3);
+        footerBtn3.setOnClickListener(mFooterListener);
+        footerBtn4 = (Button) findViewById(R.id.footer_btn4);
+        footerBtn4.setOnClickListener(mFooterListener);    
         
     }
     
+   
 
- 
     public void setActivity(Activity activity) {
         // set init otherwise of ctor and call externally...
         mActivity = activity;
     }
+
  
     // Create an anonymous implementation of OnClickListener
     private OnClickListener mFooterListener = new OnClickListener() {
+    	
+    	
         public void onClick(View v) {
+        	
             Intent myIntent;
+            
             switch (v.getId()) {
-            case R.id.footer_btn1:
-            	mActivity.finish();
-            	break;
+            
+	            case R.id.footer_btn1:
+	            	//mActivity.finish();
+	            	//Toast.makeText(mContext, "11111111", 0);
+	            	break;
+	            	
+	            case R.id.footer_btn2:
+	                //myIntent = new Intent(mContext, Activity2.class);
+	                //Toast.makeText(mContext, "22222222", 0);
+	                //mActivity.startActivity(myIntent);
+	                break;
+	                
+	            case R.id.footer_btn3:
+	            	//Toast.makeText(mContext, "33333333", 0);
+	            	break;
+	 
+	            case R.id.footer_btn4:
+	            	//Toast.makeText(mContext, "44444444", 0);
+	            	//myIntent = new Intent(main_more, MainActivity.class);
+	            	//mActivity.startActivity(myIntent);
+	            	break;            	
             	
-            case R.id.footer_btn2:
-                //myIntent = new Intent(mContext, Activity2.class);
-                Toast.makeText(mContext, "2번째 버튼이 눌려졌습니다", 0);
-                //mActivity.startActivity(myIntent);
-                break;
-                
-            case R.id.footer_btn3:
-            	Toast.makeText(mContext, "3번째 버튼이 눌려졌습니다", 0);
-            	break;
             }
  
         }
+        
+        
+
+        
+        
+        
+        
     };
 }
 

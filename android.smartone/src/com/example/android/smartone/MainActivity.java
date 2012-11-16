@@ -10,10 +10,14 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.animation.AnimationUtils;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.ViewFlipper;
@@ -60,10 +64,6 @@ public class MainActivity extends Activity  {
     	
         super.onCreate(savedInstanceState);
         
-        // notice ?????????占쏙옙???- ???????????占�?占쏙옙????占쏙옙???癒쇽옙? ??
-        //startActivity(new Intent(this, noticeActivity.class)); 
-        
-        // �����蹂댁�二쇨린
         
         
      	startActivity(new Intent(this, titleActivity.class));
@@ -74,8 +74,8 @@ public class MainActivity extends Activity  {
         
         Log.d("moms", "?占쎄린??占�?");
         
-        footer = (Footer) findViewById(R.id.layoutFooter);
-        footer.setActivity(this);
+        //footer = (Footer) findViewById(R.id.layoutFooter);
+        //footer.setActivity(this);
     		    
         // 뷰플리퍼 
         m_viewFlipper = (ViewFlipper)findViewById(R.id.viewFlipper);
@@ -83,13 +83,15 @@ public class MainActivity extends Activity  {
         startView = m_viewFlipper.getCurrentView().getId();
         
         // 스피너 ( 하단 )
+        
         m_Spinner = (Spinner)findViewById(R.id.spinner1);
         String[] myKinder = {"걸음마유치원","달나라유치원","공룡어린이집"};
         m_Spinner.setPrompt("유치원선택");
         ArrayAdapter<String> list;
         list = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, myKinder);
         m_Spinner.setAdapter(list);
-        m_Spinner.setOnItemSelectedListener((OnItemSelectedListener) this);
+        //m_Spinner.setOnItemClickListener((OnItemClickListener) this);
+        
         
 	           
         ImageButton btnMsg = (ImageButton)findViewById(R.id.BtnMsg);
@@ -245,7 +247,7 @@ public class MainActivity extends Activity  {
 		});  
 		
 		//
-		ImageButton btnOffer = (ImageButton)findViewById(R.id.BtnOffer);
+		ImageButton btnOffer = (ImageButton)findViewById(R.id.BtnApplyGoHome);
 		btnOffer.setOnClickListener( new View.OnClickListener() {
 			public void onClick(View v) {
 				Intent intentsub = new Intent( MainActivity.this, offer_list.class );
@@ -322,11 +324,60 @@ public class MainActivity extends Activity  {
 				Intent intentsub = new Intent( MainActivity.this, freetalk_list.class );
 				startActivity(intentsub);
 			}
-		}); 
-        
+		});
+		
+	    
+    	// 푸터영역 
+
+		// 푸터영역 1번 버튼  
+		Button footer_btn1 = (Button)findViewById(R.id.footer_btn1);
+		footer_btn1.setOnClickListener( new View.OnClickListener() {
+			public void onClick(View v) {
+			    // 글쓰기 
+
+			}
+		});       	
+		
+		// 푸터영역 2번 버튼  
+		Button footer_btn2 = (Button)findViewById(R.id.footer_btn2);
+		footer_btn2.setOnClickListener( new View.OnClickListener() {
+			public void onClick(View v) {
+			    // 실시간 사진 ??  
+
+			}
+		});      
+		
+		// 푸터영역 3번 버튼  
+		Button footer_btn3 = (Button)findViewById(R.id.footer_btn3);
+		footer_btn3.setOnClickListener( new View.OnClickListener() {
+			public void onClick(View v) {
+			    // 통합검
+
+			}
+		});   		
+		
+		
+		// 푸터영역 4번 버튼  
+		Button footer_btn4 = (Button)findViewById(R.id.footer_btn4);
+		footer_btn4.setOnClickListener( new View.OnClickListener() {
+			public void onClick(View v) {
+				RelativeLayout main_more = (RelativeLayout) findViewById(R.id.main_more_box);
+			    if ( main_more.getVisibility() == View.INVISIBLE ) {
+			    	main_more.setVisibility(View.VISIBLE);
+			    } else {
+			    	main_more.setVisibility(View.INVISIBLE);
+			    }
+			}
+		});        
+		
+		
         
         
     }
+    
+    
+    
+    
     
     // 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -348,6 +399,9 @@ public class MainActivity extends Activity  {
     	}    	
 		return true;
 	}
+    
+    
+    
 
     private void MoveNextView()
     {
@@ -373,38 +427,42 @@ public class MainActivity extends Activity  {
     	ImageView page_icon_1 = (ImageView)findViewById(R.id.imageView1);
     	ImageView page_icon_2 = (ImageView)findViewById(R.id.imageView2);
     	ImageView page_icon_3 = (ImageView)findViewById(R.id.imageView3);
-    	 	
     	ImageView tab_title = (ImageView)findViewById(R.id.tab_title);    	
+    	ImageView tab_bg = (ImageView)findViewById(R.id.bg_body);    	
     	    
-    	
     	if ( m_viewFlipper.getCurrentView().getId() == startView ) {
     		
     		page_icon_1.setBackgroundResource(R.drawable.main_1_on);
     		page_icon_2.setBackgroundResource(R.drawable.main_1_off);
     		page_icon_3.setBackgroundResource(R.drawable.main_1_off);
-    		
     		tab_title.setBackgroundResource(R.drawable.h2_1);
+    		tab_bg.setBackgroundResource(R.drawable.bg_body1);
+    		
     	
     	} else if ( m_viewFlipper.getCurrentView().getId() == startView+1 ) {
     		
     		page_icon_1.setBackgroundResource(R.drawable.main_1_off);
     		page_icon_2.setBackgroundResource(R.drawable.main_1_on);
     		page_icon_3.setBackgroundResource(R.drawable.main_1_off);
-    		
-    		tab_title.setBackgroundResource(R.drawable.h2_1);
+    		tab_title.setBackgroundResource(R.drawable.h2_2);
+    		tab_bg.setBackgroundResource(R.drawable.bg_body2);
     	
     	} else if ( m_viewFlipper.getCurrentView().getId() == startView+2 ) {
     		
     		page_icon_1.setBackgroundResource(R.drawable.main_1_off);
     		page_icon_2.setBackgroundResource(R.drawable.main_1_off);
     		page_icon_3.setBackgroundResource(R.drawable.main_1_on);
-    		
-    		tab_title.setBackgroundResource(R.drawable.h2_1);
+    		tab_title.setBackgroundResource(R.drawable.h2_3);
+    		tab_bg.setBackgroundResource(R.drawable.bg_body3);
+   		
     	
     	}  	
     	Log.d("flipper : ", ""+m_viewFlipper.getCurrentView().getId() );
     	
     }    
+    
+
+    
 
     View.OnTouchListener MyTouchListener = new View.OnTouchListener()
     {

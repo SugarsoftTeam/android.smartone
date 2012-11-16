@@ -30,7 +30,7 @@
     <string name="sub_back_desc">뒤로</string>
     <string name="header_logo_desc">스마트원로고</string>
     
-    <string name="title_activity_sub">스마트원1</string>
+    <string name="title_activity_sub">스마트원</string>
     
     <string name="title_activity_title">스마트원</string>
     
@@ -40,6 +40,8 @@
     <string name="login_text">회원가입 및 아이디/비밀번호 찾기는\nPC에서 이용 가능합니다.</string>
     
     <string name="sub_header_text">서브메뉴</string>
+    <string name="noti1">원아알림장</string>
+    <string name="noti2">투약의뢰</string>
     
     
     

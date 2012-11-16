@@ -8,34 +8,17 @@
     android:padding="10dp"
     android:weightSum="4" >
     
-	<LinearLayout
-	    xmlns:android="http://schemas.android.com/apk/res/android"
-	    android:id="@+id/footerLayout1"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_weight="1"
-	    android:gravity="center" >
-    
-	    <Button
-	        android:id="@+id/footer_btn1"
-	        android:layout_width="38dp"
-	        android:layout_height="40dp"
-	        android:layout_gravity="center"
-	        android:background="@drawable/foot_1"
-	       
-	         />
-	</LinearLayout>
-	    
+
  	<LinearLayout
  	    xmlns:android="http://schemas.android.com/apk/res/android"
- 	    android:id="@+id/footerLayout2"
+ 	    android:id="@+id/footerLayout1"
  	    android:layout_width="wrap_content"
  	    android:layout_height="wrap_content"
  	    android:layout_weight="1"
  	    android:gravity="center" >
       
     	<Button
-        android:id="@+id/footer_btn2"
+        android:id="@+id/footer_btn1"
         android:layout_width="38dp"
         android:layout_height="40dp"
 		android:background="@drawable/foot_2" 
@@ -44,20 +27,39 @@
     
  	<LinearLayout
  	    xmlns:android="http://schemas.android.com/apk/res/android"
- 	    android:id="@+id/footerLayout3"
+ 	    android:id="@+id/footerLayout2"
  	    android:layout_width="wrap_content"
  	    android:layout_height="wrap_content"
  	    android:layout_weight="1"
  	    android:gravity="center" >
    
     	<Button
-        android:id="@+id/footer_btn3"
+        android:id="@+id/footer_btn2"
         android:layout_width="38dp"
         android:layout_height="40dp"
 		android:background="@drawable/foot_3" 
 		
 		/>
     </LinearLayout>
+    
+	<LinearLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/footerLayout3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:gravity="center" >
+    
+	    <Button
+	        android:id="@+id/footer_btn3"
+	        android:layout_width="38dp"
+	        android:layout_height="40dp"
+	        android:layout_gravity="center"
+	        android:background="@drawable/foot_1"
+	       
+	         />
+	</LinearLayout> 	
+ 	
     
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
