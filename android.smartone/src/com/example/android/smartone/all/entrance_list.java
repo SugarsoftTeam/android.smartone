@@ -33,14 +33,13 @@ public class entrance_list extends Activity implements OnClickListener {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        
         requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
         setContentView(R.layout.list);
-      
-        //서브해더 삽입
         getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.sub_header);
-        
         TextView tvText = (TextView)findViewById(R.id.sub_header_text);
-        tvText.setText("입학 상담");
+        tvText.setText(R.string.entrance_list_header_text);
+        
         
         listview = (ListView) findViewById(R.id.list_view);
         mListItem = ItemBO.getItems();

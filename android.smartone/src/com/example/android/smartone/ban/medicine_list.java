@@ -36,11 +36,10 @@ public class medicine_list extends Activity implements OnClickListener {
         requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
         setContentView(R.layout.list);
       
-        //서브해더 삽입
+        //
         getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.sub_header);
-        
         TextView tvText = (TextView)findViewById(R.id.sub_header_text);
-        tvText.setText("투약의뢰서");
+        tvText.setText(R.string.medicine_list_header_text);
         
         listview = (ListView) findViewById(R.id.list_view);
         mListItem = ItemBO.getItems();

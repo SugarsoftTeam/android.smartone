@@ -36,11 +36,11 @@ public class leaving_list extends Activity implements OnClickListener {
         requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
         setContentView(R.layout.list);
       
-        //¼­ºêÇØ´õ »ðÀÔ
+        //
         getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.sub_header);
         
         TextView tvText = (TextView)findViewById(R.id.sub_header_text);
-        tvText.setText("Åð¼Ò/Åð¿ø ½ÅÃ»");
+        tvText.setText(R.string.leaving_list_header_text);
         
         listview = (ListView) findViewById(R.id.list_view);
         mListItem = ItemBO.getItems();

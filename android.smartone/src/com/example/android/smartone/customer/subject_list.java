@@ -36,11 +36,11 @@ public class subject_list extends Activity implements OnClickListener {
         requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
         setContentView(R.layout.list);
       
-        //서브해더 삽입
+        //
         getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.sub_header);
         
         TextView tvText = (TextView)findViewById(R.id.sub_header_text);
-        tvText.setText("계정과목 문의");
+        tvText.setText(R.string.subject_list_header_text);
         
         listview = (ListView) findViewById(R.id.list_view);
         mListItem = ItemBO.getItems();

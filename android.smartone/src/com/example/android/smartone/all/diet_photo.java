@@ -53,7 +53,7 @@ public class diet_photo extends Activity implements OnClickListener  {
         
         getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.sub_header);
         TextView tvText = (TextView)findViewById(R.id.sub_header_text);
-        tvText.setText("diet_photo");
+        tvText.setText(R.string.diet_photo_header_text);
         
         
     }

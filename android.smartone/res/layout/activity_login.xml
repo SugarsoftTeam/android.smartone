@@ -2,13 +2,55 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical" >
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg_sub"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    >
+    
+    <ImageView
+        android:id="@+id/keyboard_view"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:background="@drawable/keyboard_view"
+        android:scaleType="center"
+        android:visibility="visible" />
+    
+	
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal"
+	    >
+    
+		<ImageView
+		    android:id="@+id/smartone_login_title"
+		    android:layout_width="155dp"
+		    android:layout_height="28dp"
+		    android:contentDescription="@string/header_logo_desc"
+		    android:scaleType="fitStart"
+		    android:src="@drawable/smartone_login_title" />
+
+		<ImageView
+		    android:id="@+id/keyboard_view_btn"
+		    android:layout_width="75dp"
+		    android:layout_height="24dp"
+		    android:background="@drawable/keyboard_view_btn"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="2dp"
+	        android:layout_alignParentRight="true"		    
+		    />	
+	 
+	</RelativeLayout>      
+    
     
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp" >
+        android:layout_marginTop="10dp" >
         
         <LinearLayout
             android:layout_width="wrap_content"
@@ -16,15 +58,16 @@
             android:orientation="vertical" >
             
             <EditText
-                android:id="@+id/editText1"
+                android:id="@+id/log_ID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10" >
+                android:ems="10" 
+                >
             	<requestFocus />
             </EditText>
             
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/log_Pwd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -46,14 +89,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="자동 로그인" />
+        android:text="자동로그인" 
+        android:textSize="14dp"
+        android:textColor="#888888"
+        />
     
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="@string/login_text"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textSize="10dp"
+        android:textColor="#888888"
+        />
 
 </LinearLayout>

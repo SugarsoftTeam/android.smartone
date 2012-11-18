@@ -103,7 +103,14 @@ public class MainActivity extends Activity  {
 			}
 		}); 
 
-        //1�� ��� 
+        
+        
+        
+        
+        
+        
+        //
+        
         ImageButton btnMantoman = (ImageButton)findViewById(R.id.BtnMantoman);
         btnMantoman.setOnClickListener( new View.OnClickListener() {
 			public void onClick(View v) {
@@ -112,7 +119,7 @@ public class MainActivity extends Activity  {
 			}
 		}); 
         
-        //��� ��┝��
+        //
         
         ImageButton btnNotify = (ImageButton)findViewById(R.id.BtnNotify);
         
@@ -124,7 +131,8 @@ public class MainActivity extends Activity  {
 		}); 
         
         
-        //異�껐愿�━
+        //
+        
         ImageButton btnAttendance = (ImageButton)findViewById(R.id.BtnAttendance);
         btnAttendance.setOnClickListener( new View.OnClickListener() {
 			public void onClick(View v) {
@@ -133,7 +141,8 @@ public class MainActivity extends Activity  {
 			}
 		}); 
         
-        //媛���듭�臾�        
+        //
+        
         ImageButton btnHomereport = (ImageButton)findViewById(R.id.BtnHomereport);
         btnHomereport.setOnClickListener( new View.OnClickListener() {
 			public void onClick(View v) {
