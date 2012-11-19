@@ -1,0 +1,92 @@
+<resources>
+
+    <string name="app_name">smartone</string>
+    
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    
+    <string name="title_activity_main">스마트원 by OnAndOn</string>
+    
+    <string name="main_button_1_desc">스마트1</string>
+    <string name="main_button_2_desc">스마트원2</string>
+    <string name="main_button_3_desc">맘스3</string>
+    <string name="main_button_4_desc">맘스4</string>
+    
+    <string name="main_button_5_desc">맘스5</string>
+    <string name="main_button_6_desc">맘스6</string>
+    <string name="main_button_7_desc">맘스7</string>
+    <string name="main_button_8_desc">맘스8</string>
+    
+	<string name="main_button_9_desc">맘스9</string>
+    <string name="main_button_10_desc">맘스10</string>
+    <string name="main_button_11_desc">맘스11</string>
+    <string name="main_button_12_desc">맘스12</string>
+
+	<string name="main_button_13_desc">맘스13</string>
+    <string name="main_button_14_desc">맘스14</string>
+    <string name="main_button_15_desc">맘스15</string>
+    <string name="main_button_16_desc">맘스16</string>
+        
+    <string name="sub_back_desc">뒤로</string>
+    <string name="header_logo_desc">스마트원로고</string>
+    
+    <string name="title_activity_sub">스마트원</string>
+    
+    <string name="title_activity_title">스마트원</string>
+    
+    <string name="title_logo">행복한 엄마\n즐거운 아이</string>
+    
+    <string name="title_activity_login">스마트 로그인</string>    
+    <string name="login_text">회원가입 및 아이디/비밀번호 찾기는\n PC에서 이용 가능합니다.</string>
+    
+    <string name="sub_header_text">서브메뉴</string>
+    <string name="noti1">원아알림장</string>
+    <string name="noti2">투약의뢰</string>
+
+    
+    <string name="notify_homemake_view_header_text">원아알림장</string>
+    <string name="notify_home_view_header_text">원아알림장</string>
+    <string name="homereport_list_header_text">가정통신문 </string>
+      
+    <string name="receiveMsg_list_header_text">쪽지 </string>
+    <string name="medicine_list_header_text">투약의뢰 </string>
+    <string name="medicine_comp_list_header_text">투약의뢰 - 완료 </string>
+    
+    <string name="attendance_book_list_header_text">출결관리</string>
+    <string name="gohome_write_header_text">귀가요청서 </string>
+    <string name="mantoman_list_header_text">1대1상담</string>  
+    <string name="mantoman_comp_list_header_text">1대1상담</string>  
+      
+    <string name="entrance_list_header_text">입학상담 </string>
+    <string name="entrance_comp_header_text">입학상담 - 완료 </string>
+    <string name="leaving_list_header_text">퇴원/퇴원신청</string>
+	<string name="leaving_comp_header_text">퇴원/퇴원 - 완료</string>
+    
+    <string name="festival_album_list_header_text">행사앨범 </string>
+    <string name="class_album_list_header_text">우리반앨범 </string>
+    <string name="class_story_list_header_text">우리반이야기 </string>
+    <string name="news_list_header_text">원소식</string>
+    <string name="freeboard_list_header_text">자유게시판 </string>
+    <string name="diet_photo_header_text">식단인증샷  </string>
+    <string name="entry_ing_list_header_text">참가신청현황 </string>     
+    <string name="entry_comp_list_header_text">참가신청현황 </string>     
+    
+    
+    <string name="subject_list_header_text">계정과목문의 </string>
+    <string name="happycall_comp_header_text">해피콜 </string>
+    <string name="gulumma_mantoman_list_header_text">1대1문의 </string>
+    <string name="deposit_list_header_text">입금확인 </string>
+    <string name="gulumma_noti_list_header_text">걸음마넷공지 </string>
+    <string name="noti_list_header_text">스마트원공지 </string>
+    <string name="recruit_main_list_header_text">인재현황 </string>      
+    <string name="job_apply_list_header_text">채용정보 </string>
+    <string name="freetalk_list_header_text">커뮤니티 </string>   
+    <string name="offer_list_header_text">제안하기 </string>          
+   
+    
+    
+    
+    
+    
+    
+</resources>
