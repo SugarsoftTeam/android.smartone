@@ -36,11 +36,10 @@ public class recruit_man_list extends Activity implements OnClickListener {
         requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
         setContentView(R.layout.list);
       
-        //¼­ºêÇØ´õ »ðÀÔ
+        //ï¿½ï¿½ï¿½ï¿½ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½ï¿½
         getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.sub_header);
-        
         TextView tvText = (TextView)findViewById(R.id.sub_header_text);
-        tvText.setText("±¸ÀÎ°ü¸®");
+        tvText.setText(R.string.recruit_main_list_header_text);     
         
         listview = (ListView) findViewById(R.id.list_view);
         mListItem = ItemBO.getItems();

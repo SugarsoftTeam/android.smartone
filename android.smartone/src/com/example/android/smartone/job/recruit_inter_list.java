@@ -35,7 +35,9 @@ public class recruit_inter_list extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
         setContentView(R.layout.list);
-        getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.header);
+        getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.sub_header);
+        TextView tvText = (TextView)findViewById(R.id.sub_header_text);
+        tvText.setText(R.string.recruit_main_list_header_text);             
         
         listview = (ListView) findViewById(R.id.list_view);
         mListItem = ItemBO.getItems();

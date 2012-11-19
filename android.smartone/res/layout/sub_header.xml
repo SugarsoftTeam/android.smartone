@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    style="@style/CustomWindowTitleBackground"
 	    android:layout_width="fill_parent"
 	    android:layout_height="60dip"
 	    android:layout_gravity="end|fill"
-	    android:background="#dc6203"
+	    android:background="@drawable/bg_s_header"
 	    android:gravity="center_vertical"
-	    android:orientation="horizontal"
-	    android:paddingLeft="5dip" >
+	    android:orientation="horizontal" >
 
 	    <TextView
 	        android:id="@+id/sub_header_text"
@@ -15,6 +15,8 @@
 	        android:layout_weight="1"
 	        android:gravity="center"
 	        android:text="@string/sub_header_text"
-	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	        android:textAppearance="?android:attr/textAppearanceLarge" 
+	        android:textSize="16dp"
+	        />
 
 	</LinearLayout>

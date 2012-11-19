@@ -37,6 +37,9 @@ public class entry_comp_list extends Activity implements OnClickListener {
         setContentView(R.layout.list);
         getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.header);
         
+        TextView tvText = (TextView)findViewById(R.id.sub_header_text);
+        tvText.setText(R.string.entry_comp_list_header_text);        
+        
         listview = (ListView) findViewById(R.id.list_view);
         mListItem = ItemBO.getItems();
         listview.setAdapter(new ListAdapter(entry_comp_list.this, R.id.list_view,

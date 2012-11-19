@@ -11,6 +11,7 @@ import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.RelativeLayout.*;
 
 public class notify_homemake_view extends Activity implements OnClickListener  {
@@ -25,7 +26,7 @@ public class notify_homemake_view extends Activity implements OnClickListener  {
         Button button_view = new Button(this);
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
-        	button_view.setText(bundle.getString("NAME") + "ÀÌ " + bundle.getString("TIME") +"¿¡ ¸»ÇÕ´Ï´Ù." + bundle.getString("DESC")
+        	button_view.setText(bundle.getString("NAME") + "ï¿½ï¿½ " + bundle.getString("TIME") +"ï¿½ï¿½ ï¿½ï¿½ï¿½Õ´Ï´ï¿½." + bundle.getString("DESC")
                     + " --- Go Back ");
         } else {
         	button_view.setText("Go Back");
@@ -46,8 +47,9 @@ public class notify_homemake_view extends Activity implements OnClickListener  {
         
         requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
         setContentView(relativeLayout, params);
-        getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.header);
-        
+        getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.sub_header);
+        TextView tvText = (TextView)findViewById(R.id.sub_header_text);
+        tvText.setText(R.string.notify_homemake_view_header_text);        
         
     }
 

@@ -62,8 +62,8 @@ public class ItemBO {
         Log.d("moms",ver);
         
         if(Float.parseFloat(ver) >= 2.3) {
-    	StrictMode.ThreadPolicy policy=new StrictMode.ThreadPolicy.Builder().permitAll().build();
-    	StrictMode.setThreadPolicy(policy);
+        	StrictMode.ThreadPolicy policy=new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        	StrictMode.setThreadPolicy(policy);
         }
 
         Handler handler = new Handler();
@@ -81,10 +81,11 @@ public class ItemBO {
         //nameValuePairs.add(new BasicNameValuePair("no", question));
     	
     	//http post
+        
         try{
 
         	    HttpClient httpclient = new DefaultHttpClient();
-                HttpPost httppost = new HttpPost("http://m.petronet.co.kr/mw/sm/json.jsp");
+                HttpPost httppost = new HttpPost("http://www.gulumma.net/member/member/ajaxproc/");
                 httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
                 HttpResponse response = httpclient.execute(httppost);
                 HttpEntity entity = response.getEntity();
