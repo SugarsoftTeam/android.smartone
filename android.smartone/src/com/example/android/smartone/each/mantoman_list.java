@@ -43,7 +43,8 @@ public class mantoman_list extends Activity implements OnClickListener {
         tvText.setText(R.string.mantoman_list_header_text);
         
         listview = (ListView) findViewById(R.id.list_view);
-        mListItem = ItemBO.getItems();
+        String code = "mantoman_list";
+        mListItem = ItemBO.getItems(code);
         listview.setAdapter(new ListAdapter(mantoman_list.this, R.id.list_view,
                 mListItem));
         

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/subject1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="제목이 나옴"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/mod_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이력서 수정일자 : 2012.02.02" />
+
+        <TableLayout
+			android:padding="10dp"
+			android:stretchColumns="*"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+			<TableRow>
+
+	        <TableLayout
+			android:layout_span="2"
+			>
+				<TableRow
+				>            
+				<TextView
+					android:layout_height="20dp"
+					android:text="이름"
+					/>
+
+				<TextView
+					android:id="@+id/name"
+					android:text="김우빈 (여)" />
+	
+
+				</TableRow>
+				<TableRow
+				>
+				<TextView
+					android:layout_height="20dp"
+					android:text="나이"
+					/>
+
+				<TextView
+					android:id="@+id/age"
+					android:text="1985년생(24)" />
+
+				</TableRow>
+				<TableRow
+				>
+				<TextView
+					android:layout_height="20dp"
+					android:text="휴대폰"
+					/>
+
+				<TextView
+					android:id="@+id/phone"
+					android:text="010-4313-5728" />
+
+				</TableRow>
+
+			</TableLayout>
+
+	        <ImageView
+				android:layout_width="60dp"
+				android:layout_height="60dp"
+	            android:id="@+id/img"
+	            android:src="@drawable/menu3_4" />
+			</TableRow>
+
+			<TableRow>
+				<TextView
+					android:text="전화번호"
+					/>
+
+				<TextView
+					android:layout_span="2"
+					android:id="@+id/tel"
+					android:text="02-797-5728" />
+			</TableRow>
+
+			<TableRow>
+				<TextView
+					android:text="학력사항"
+					/>
+
+				<TextView
+					android:layout_span="2"
+					android:id="@+id/school"
+					android:text="대학(2,3년) 졸업" />
+			</TableRow>
+
+			<TableRow>
+				<TextView
+					android:text="이메일"
+					/>
+
+				<TextView
+					android:layout_span="2"
+					android:id="@+id/email"
+					android:text="dnqhdqhd1029@nate.com" />
+			</TableRow>
+
+			<TableRow>
+				<TextView
+					android:text="주소"
+					/>
+
+				<TextView
+					android:layout_span="2"
+					android:id="@+id/addr"
+					android:text="서울시 용산구 용산동" />
+			</TableRow>
+
+			<TableRow>
+				<TextView
+					android:layout_span="3"
+					android:text="지원정보" />
+			</TableRow>
+
+			<TableRow>
+				<TextView
+					android:text="희망기관"
+					/>
+
+				<TextView
+					android:layout_span="2"
+					android:id="@+id/hopegigan"
+					android:text="어린이집" />
+			</TableRow>
+
+			<TableRow>
+				<TextView
+					android:text="지원분야"
+					/>
+
+				<TextView
+					android:layout_span="2"
+					android:id="@+id/hopebunya"
+					android:text="원장" />
+			</TableRow>
+
+			<TableRow>
+				<TextView
+					android:text="지원형태"
+					/>
+
+				<TextView
+					android:layout_span="2"
+					android:id="@+id/hope"
+					android:text="정규직" />
+			</TableRow>
+
+			<TableRow>
+				<TextView
+					android:text="경력사항"
+					/>
+
+				<TextView
+					android:layout_span="2"
+					android:id="@+id/exp"
+					android:text="신입" />
+			</TableRow>
+
+			<TableRow>
+				<TextView
+					android:text="희망연봉"
+					/>
+
+				<TextView
+					android:layout_span="2"
+					android:id="@+id/hopemoney"
+					android:text="면접후 결정" />
+			</TableRow>
+
+			<TableRow>
+				<TextView
+					android:text="희망지역"
+					/>
+
+				<TextView
+					android:layout_span="2"
+					android:id="@+id/hopeaddr"
+					android:text="서울시 용산구 / 서울시 마포구" />
+			</TableRow>
+
+			<TableRow>
+				<TextView
+					android:text="첨부파일"
+					/>
+
+				<TextView
+					android:layout_span="2"
+					android:id="@+id/imgfile"
+					android:text="rladnqls.jpg" />
+			</TableRow>
+
+			<TableRow  >
+
+				<TextView
+					android:layout_height="20dp"
+				    android:layout_gravity="center"
+				    android:layout_span="3"
+				    android:text="특기사항" />
+
+			</TableRow>
+
+			<TableRow>
+				<TextView
+					android:layout_span="3"
+					android:layout_height="60dp"
+					android:text="피아노 피아노 피아노 피아노" />
+			</TableRow>
+
+			<TableRow>
+				<TextView
+					android:layout_height="20dp"
+				    android:layout_gravity="center"
+					android:layout_span="3"
+					android:text="경력, 자격증, 교육이수사항" />
+			</TableRow>
+
+			<TableRow>
+				<TextView
+					android:layout_span="3"
+					android:layout_height="60dp"
+					android:text="피아노, 피아노, 피아노" />
+			</TableRow>
+
+			<TableRow>
+				<TextView
+					android:layout_height="20dp"
+				    android:layout_gravity="center"
+					android:layout_span="3"
+					android:text="자기소개" />
+			</TableRow>
+
+			<TableRow>
+				<TextView
+					android:layout_span="3"
+					android:layout_height="60dp"
+					android:text="피아노, 피아노, 피아노" />
+			</TableRow>
+
+        </TableLayout>
+        
+    </LinearLayout>
+
+</ScrollView>

@@ -41,9 +41,10 @@ public class recruit_man_list extends Activity implements OnClickListener {
         TextView tvText = (TextView)findViewById(R.id.sub_header_text);
         tvText.setText(R.string.recruit_main_list_header_text);     
         
-        listview = (ListView) findViewById(R.id.list_view);
-        mListItem = ItemBO.getItems();
-        listview.setAdapter(new ListAdapter(recruit_man_list.this, R.id.list_view,
+        listview = (ListView) findViewById(R.id.recruit_list);
+        String code = "recruit_man_list";
+        mListItem = ItemBO.getItems(code);
+        listview.setAdapter(new ListAdapter(recruit_man_list.this, R.id.recruit_list,
                 mListItem));
         
         footer = (Footer) findViewById(R.id.layoutFooter);

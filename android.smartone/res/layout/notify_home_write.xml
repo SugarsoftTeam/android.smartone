@@ -2,8 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_sub" >
-    
+    android:background="@drawable/bg" >
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -148,7 +148,7 @@
 		    <TextView 
 		        android:layout_width="wrap_content"
 			    android:layout_height="match_parent"
-			    android:width="70dp"
+			    android:width="55dp"
 			    android:text="기분"
 			    android:textColor="#000000"
 			    android:gravity="center"/>
@@ -200,7 +200,7 @@
 		    <TextView 
 		        android:layout_width="wrap_content"
 			    android:layout_height="match_parent"
-			    android:width="70dp"
+			    android:width="55dp"
 			    android:text="건강"
 			    android:textColor="#000000"
 			    android:gravity="center"/>
@@ -251,7 +251,7 @@
 		    <TextView 
 		        android:layout_width="wrap_content"
 			    android:layout_height="match_parent"
-			    android:width="70dp"
+			    android:width="55dp"
 			    android:text="체온"
 			    android:textColor="#000000"
 			    android:gravity="center"/>
@@ -302,7 +302,7 @@
 		    <TextView 
 		        android:layout_width="wrap_content"
 			    android:layout_height="match_parent"
-			    android:width="70dp"
+			    android:width="55dp"
 			    android:text="1회"
 			    android:textColor="#000000"
 			    android:gravity="center"/>
@@ -347,7 +347,7 @@
 		    <TextView 
 		        android:layout_width="wrap_content"
 			    android:layout_height="match_parent"
-			    android:width="70dp"
+			    android:width="55dp"
 			    android:text="2회"
 			    android:textColor="#000000"
 			    android:gravity="center"/>
@@ -391,7 +391,7 @@
 		    <TextView 
 		        android:layout_width="wrap_content"
 			    android:layout_height="match_parent"
-			    android:width="70dp"
+			    android:width="55dp"
 			    android:text="3회"
 			    android:textColor="#000000"
 			    android:gravity="center"/>
@@ -442,7 +442,7 @@
 		    <TextView 
 		        android:layout_width="wrap_content"
 			    android:layout_height="match_parent"
-			    android:width="70dp"
+			    android:width="55dp"
 			    android:text="1회"
 			    android:textColor="#000000"
 			    android:gravity="center"/>
@@ -487,7 +487,7 @@
 		    <TextView 
 		        android:layout_width="wrap_content"
 			    android:layout_height="match_parent"
-			    android:width="70dp"
+			    android:width="55dp"
 			    android:text="2회"
 			    android:textColor="#000000"
 			    android:gravity="center"/>
@@ -531,7 +531,7 @@
 		    <TextView 
 		        android:layout_width="wrap_content"
 			    android:layout_height="match_parent"
-			    android:width="70dp"
+			    android:width="55dp"
 			    android:text="3회"
 			    android:textColor="#000000"
 			    android:gravity="center"/>
@@ -583,7 +583,7 @@
 		    <TextView 
 		        android:layout_width="wrap_content"
 			    android:layout_height="match_parent"
-			    android:width="70dp"
+			    android:width="55dp"
 			    android:text="저녁"
 			    android:textColor="#000000"
 			    android:gravity="center"/>
@@ -606,7 +606,7 @@
 		    <TextView 
 		        android:layout_width="wrap_content"
 			    android:layout_height="match_parent"
-			    android:width="70dp"
+			    android:width="55dp"
 			    android:text="간식"
 			    android:textColor="#000000"
 			    android:gravity="center"/>
@@ -629,7 +629,7 @@
 		    <TextView 
 		        android:layout_width="wrap_content"
 			    android:layout_height="match_parent"
-			    android:width="70dp"
+			    android:width="55dp"
 			    android:text="아침"
 			    android:textColor="#000000"
 			    android:gravity="center"/>
@@ -658,7 +658,7 @@
 			<TextView 
 		        android:layout_width="wrap_content"
 			    android:layout_height="match_parent"
-			    android:width="70dp"
+			    android:width="55dp"
 			    android:text="오전"
 			    android:textColor="#000000"
 			    android:gravity="center"/>
@@ -703,7 +703,7 @@
 			<TextView 
 		        android:layout_width="wrap_content"
 			    android:layout_height="match_parent"
-			    android:width="70dp"
+			    android:width="55dp"
 			    android:text="오후"
 			    android:textColor="#000000"
 			    android:gravity="center"/>
